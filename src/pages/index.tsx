@@ -16,12 +16,12 @@ export default function Home() {
         title="Exspera"
         description="A TypeScript/Next.js theme that includes everything you need to build amazing landing page!"
       />
-      <Header />
+      <CasesSection />
+      {/* <Header /> */}
       <main>
         {/* <VideoSection /> */}
         <ListSection />
         <FeatureSection />
-        <CasesSection />
         {/* <SocialProof /> */}
         {/* <PricingTable /> */}
       </main>
