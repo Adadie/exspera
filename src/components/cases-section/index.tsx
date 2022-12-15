@@ -7,14 +7,15 @@ const ParticleBg = () => (
     params={{
       particles: {
         number: {
-          value: 400,
+          value: 700,
           density: {
             enable: true,
             value_area: 3000,
           },
         },
         line_linked: {
-          enable: false,
+          enable: true,
+          color: '#9EB0B1',
         },
         move: {
           direction: `right`,
@@ -27,14 +28,27 @@ const ParticleBg = () => (
           anim: {
             enable: true,
             speed: 0.5,
-            opacity_min: 0.1,
+            opacity_min: 0.001,
           },
         },
       },
       interactivity: {
         events: {
           onclick: {
-            enable: false,
+            enable: true,
+          },
+          onhover: {
+            enable: true,
+          },
+          resize: true,
+        },
+        modes: {
+          push: {
+            quantity: 4,
+          },
+          repulse: {
+            distance: 200,
+            duration: 0.4,
           },
         },
       },
@@ -45,17 +59,20 @@ const ParticleBg = () => (
 
 const articles = [
   {
-    title: `Velit reprehenderit culpa Lorem reprehenderit excepteur ipsum esse.`,
+    title: `Experiment`,
+    info: `Run experiments from your comfort zone`,
     image: `/images/vr-1.jpeg`,
     alt: `Proident pariatur est.`,
   },
   {
-    title: `Velit reprehenderit culpa Lorem reprehenderit ipsum esse.`,
+    title: `Build`,
+    info: `No need for luxurious materials to build prototypes`,
     image: `/images/vr-2.jpg`,
     alt: `Proident pariatur est.`,
   },
   {
-    title: `Velit reprehenderit culpa Lorem reprehenderit excepteur esse.`,
+    title: `Explore`,
+    info: `The sky is no longer the limit, your mind is!`,
     image: `/images/vr-3.jpg`,
     alt: `Proident pariatur est.`,
   },
@@ -68,13 +85,13 @@ const CasesSection = () => (
         <ParticleBg />
       </div>
       <div className={tw(`max-w-7xl mx-4 lg:mx-auto pt-20 lg:pt-40`)}>
-        <h1 className={tw(`text-white text-4xl lg:text-7xl font-bold text-center`)}>
+        <h1 className={tw(`text-gray-300 text-4xl lg:text-7xl font-bold text-center`)}>
           {' '}
           Get quality education and build beyond your expectations.
         </h1>
-        <p className={tw(`text-white text-gray-400 text-center text-xl mt-12`)}>
+        {/* <p className={tw(`text-white text-gray-400 text-center text-xl mt-12`)}>
           Don’t just take our word for it — see what leaders in digital are saying
-        </p>
+        </p> */}
         <div className={tw(`mx-auto pt-24`)}>
           <div className={tw(`w-full flex flex-wrap justify-around`)}>
             {articles.map((article) => (
@@ -82,7 +99,7 @@ const CasesSection = () => (
                 key={article.title}
                 className={tw(
                   `xl:w-1/3 sm:w-5/12 sm:max-w-xs relative mb-32 lg:mb-20
-                      xl:max-w-sm lg:w-1/2 w-11/12 mx-auto sm:mx-0 cursor-pointer hover:scale-105`,
+                      xl:max-w-sm lg:w-1/2 w-11/12 mx-auto sm:mx-0 hover:scale-105`,
                 )}
               >
                 <div className={tw(`h-64 z-20`)}>
@@ -95,8 +112,8 @@ const CasesSection = () => (
                   />
                 </div>
                 <div className={tw(`p-4 shadow-lg w-full mx-auto -mt-8 bg-white rounded-b z-30 relative`)}>
-                  <p className={tw(`uppercase text-sm text-gray-700 text-center pb-1`)}>Case study</p>
-                  <p className={tw(`text-gray-500 text-center pb-1 text-sm`)}>{article.title}</p>
+                  <p className={tw(`uppercase text-sm text-gray-700 text-center pb-1`)}>{article.title}</p>
+                  <p className={tw(`text-gray-500 text-center pb-1 text-sm`)}>{article.info}</p>
                 </div>
               </div>
             ))}

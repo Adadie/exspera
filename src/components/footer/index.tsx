@@ -18,9 +18,14 @@ const resourceLinks = [
 const Footer = () => (
   <footer className={tw(`bg-black border-t border-gray-400 pt-2 pb-2`)} style={{ backgroundColor: '#111827' }}>
     <div className={tw(`max-w-7xl mx-auto text-gray-400 px-8 lg:px-0 flex flex-wrap`)}>
-      <div className={tw(`mb-14 flex items-center w-full`)}>
+      <div className={tw(`mb-0 flex items-center w-full`)}>
         <img className={tw(`h-254 w-24 mr-4`)} src="logo.svg" alt="logo" width={48} height={48} />
         {/* <p className={tw(`text-4xl text-indigo-500 font-bold`)}>STARTD</p> */}
+        <div></div>
+      </div>
+      <div className={tw(`w-full lg:w-1/10`)}>
+        {' '}
+        <center>Copyright © 2022, Exspera ltd. All rights reserved.</center>
       </div>
       {/* <div className={tw(`w-full lg:w-1/2`)}>
         <ul className={tw(`text-lg font-light flex flex-wrap w-full`)}>

@@ -3,22 +3,16 @@ import FeatureSvg from '@/constants/svg/features.svg';
 
 const listItems = [
   {
-    title: `Doctors`,
-    description: `Officia et fugiat mollit qui. Dolor elit aliqua voluptate ipsum
-    excepteur cillum consequat consectetur duis magna qui eu consequat occaecat.
-    Deserunt nisi sit.`,
+    title: `Schools`,
+    description: `Whether it’s a trip to a virtual zoo or a science experiment done in a virtual lab, virtual reality helps students to not only see, but interact with the lessons they are being taught.`,
   },
   {
     title: `Engineers`,
-    description: `Pariatur consectetur laboris exercitation duis laboris.
-    Commodo duis fugiat magna fugiat et ut anim elit. Tempor aute ex qui
-    tempor tempor.`,
+    description: `Engineers are allowed to test a product in a safe environment. As a matter of fact, the use of VR in engineering allows engineers to create dangerous and hazardous situations that are usually challenging or even impossible to create in real life. As a result, engineers can make all the necessary adjustments that would allow them to tweak a product to perfection before it hits the production and assembly lines.`,
   },
   {
     title: `Scientists`,
-    description: `Ullamco consectetur ipsum eiusmod nisi adipisicing sint anim
-    dolore aute excepteur. Voluptate ea ullamco sunt eu elit qui aliquip.
-    Adipisicing.`,
+    description: `Virtual reality environment offers scientists a more instinctive way to understand their data, whether it signifies an object such as a tumor or a molecule, or is represented in the form of a graph, with many variables plotted out.`,
   },
 ];
 
@@ -26,7 +20,7 @@ const ListSection = () => (
   <section className={tw(`lg:py-28 pt-28 overflow-hidden`)}>
     <div className={tw(`max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 bg-white`)}>
       <div className={tw(`mb-16 text-center`)}>
-        <h2 className={tw(`text-base text-indigo-600 font-semibold tracking-wide uppercase`)}>Boost your education</h2>
+        <h2 className={tw(`text-base text-indigo-600 font-semibold tracking-wide uppercase`)}>No more limitations</h2>
         <p className={tw(`mt-2 pb-4 text-5xl lg:text-7xl font-bold tracking-tight text-gray-900`)}>
           Transform your mind
         </p>
